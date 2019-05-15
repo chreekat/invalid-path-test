@@ -17,7 +17,7 @@ Vagrant.configure("2") do |config|
   end
 
   #
-  # Common ansible config
+  # Common provisioning
   #
 
   $script = <<-SCRIPT
