@@ -6,6 +6,7 @@ let
   }) {};
 in
   pkgs.mkShell {
+    helloPath = "${pkgs.hello}";
     buildInputs = [
         pkgs.vagrant
     ];

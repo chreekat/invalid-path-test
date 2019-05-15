@@ -9,7 +9,6 @@ vssh () {
     ssh -F .vagrant_ssh $@
 }
 
-helloPath=$(nix-store -r $(nix-instantiate '<nixpkgs>' -A hello))
 $helloPath/bin/hello -g "Hello from hello!"
 
 hdr "Method 1: Fails with export + import :("
